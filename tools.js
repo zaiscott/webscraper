@@ -24,7 +24,7 @@ var storeToDisk = function(filename,data,callback)
 }
 
 //scrapes a URL, parses it with parseFcn, and archives the data in a JSON file called filename.
-var scraper = function(url,parseFcn,filename)
+exports.scraper = function(url,parseFcn,filename)
 {
     console.log("reading page");
     retrievePage(url,function(html)
